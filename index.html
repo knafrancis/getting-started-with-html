@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Kirby Francis</title>
+
+</head>
+
+<body>
+
+  <p><b>Unit 1</b> <br><em>Steve Huffman</em><br>
+The basics of the web<br>
+<b>WEB<br>
+HTML<br>
+URLS<br>
+HTTP<br>
+  Web Apps</b><br></p>
+
+<p>
+  <b>So what <em>is</em>the World Wide Web?</b><br>
+- a collection of html docs<br>
+- links between pages, hyperlinks, makes it web-like<br>
+  - invented mid-1990-’s, 30 <em>Billion</em> pages<br>
+- Major pieces of the web, or concepts: You, your computer’s browser, the internet, servers<br>
+- http is protocol that your browser uses to make requests from the servers.<br>
+- servers host files<br>
+
+  </p> 
+<p>
+  <b>HTML Documents</b><br>
+- docs are the heart of the web, web is made up of these.  <br>
+- text = content, markup = how it is arranged, references to other documents, links to other pages<br>
+- udacity.com/html_playground wikll be useful<br>
+- plain text is plain text in HTML.  To make it look different, use Markup<br>
+- made up of tags, < NAME > contents < /name ><br>
+- opening tag and closing tag, names are the same<br>
+- whole thing is referred to as an element.  <br>
+- first tag to learn about is < b>.  bold <br>
+- emphasis tag - em, this italicizes<br>
+  - everything after an unclosed tag <em>will feature those attributes</em><br>
+- HTML attributes: opening tag and closing tag, but a new thing called an attribute, value  is what is inside quotes<br>
+- doesn’t always have to equal a value, but in our case it will.<br>
+- syntax is < TAG ATTR=“value”>contents< /TAG><br>
+- one example is anchor, “a”<br>
+< a href=“ww.reddit.com”>derp< /a><br>
+- in this case, the contents “derp” are all that would be displayed.  The attribute here is href, the tag is an “anchor” tag, and the value is a URL<br>
+- image tag - < img src=“url” alt=’”text”><br>
+- src is first attribute, next attribute is “text”  - HTML parsers will complain if you don’t have that alt attributer in there, also for blind people makes life easier.<br>
+- every tag we have talked about has a closing tag, but this doesn’t.  Images don’t have any contents, so you don’t need one.  This is called a “Void tag” - has no content, therefore doesn’t need a closing tag.<br>
+  <em>White space:</em><br>
+- even with text on ,multiple lines, html puts it on one line<br>
+- that’s because in html, all elements are turn into a in a single space<br>
+- to force it to have multiple lines, use the br tag < br>  break is a void tag as well<br>
+- enter multiple br tags for multiple breaks<br>
+- another way of doing this is using < p> tag - it is a paragraph.  It has contents, therefore not a void tag, needs a closing tag.  It will render as one paragraph<br>
+- font gets bigger?  maybe a style set on “p”  - just ignore it<br>
+- you can hit return or space as often as you want.  It will be rendered as one space, and no break.<br>
+- br tag is “inline”, p tag is “block”<br>
+- br tag just ends a line, “the line ends here”<br>
+- p tag makes an invisible box, instead of rendering text and a blank line, it renders a “box” around them.  It can have defined heithgh and width<br>
+- this comes up a fair amount later on, there is a distinction between them.<br>
+- b, em, img all are inline elements.  Only block element we’ve learned so far is p element<br>
+  <em>span and div</em>
+- booth normal elements with content, span is inline, div is block<br>
+- they just contain content, can attach styles to them to adjust behaviors of how they display<br>
+- he has added an attribute on them called “class” - adds styles to a doc<br>
+- controls how text is laid out<br>
+- eg:<br>
+- < span>this is one line< /span> - behaves like you’d expect<br>
+- if he changes to div, behaves more like a paragraph, pushes other text down two lines<br>
+- a, span, br, img, and strong are all inline elements while div, p, and form are block elements.<br>
+  </p>
+<p><br>
+  <b>Structure of an HTML doc </b><br>
+- we have seen little markup, simple tags<br>
+- a complete doc has a whole lot more.<br>
+First is < !DOCTYPE HTML><br>
+- this tag used to be a lot more complex, in html 5, it’s just HTML<br>
+- then opening < html> and closing < /html>  this only serves to surround the entire document<br>
+- then < head>  - has metadata, css and javascript would be in here as well<br>
+- title is the title of the page, what appears in top of browser window<br>
+- body tag is the contents of the document, we’ve been working in that tag so far.  IN this course, we spend most of our time in the body tag<br>
+- We will be generating the body of an html document
+  </p>
+
+</body>
+
+</html>
